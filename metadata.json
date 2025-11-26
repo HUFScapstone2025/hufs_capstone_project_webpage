@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Cloud Failure Response AIOps",
+  "description": "A Hybrid Cloud AIOps system showcasing automated Kubernetes failure resolution using Raspberry Pi 5 edge nodes and High-Performance GPU servers.",
+  "requestFramePermissions": []
+}
