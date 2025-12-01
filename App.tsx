@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import ArchitectureDiagram from './components/ArchitectureDiagram';
+import LiveMonitor from './components/LiveMonitoring';
 import Workflow from './components/Workflow';
 import ScenarioShowcase from './components/ScenarioShowcase';
 import Benefits from './components/Benefits';
@@ -11,6 +12,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-cyber-black text-slate-200 font-sans selection:bg-cyber-neon selection:text-black">
       <Hero />
       <ArchitectureDiagram />
+      <LiveMonitor />
       <Workflow />
       <ScenarioShowcase />
       <Benefits />
