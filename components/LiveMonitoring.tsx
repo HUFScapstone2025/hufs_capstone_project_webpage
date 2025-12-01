@@ -11,28 +11,28 @@ interface MonitorPanel {
 const panels: MonitorPanel[] = [
   {
     id: 'panel-4',
-    title: 'Cluster Health Status',
+    title: 'Abnormal Pods',
     // Panel 4 (Dark)
     src: 'https://stage-bass-stage-yours.trycloudflare.com/d-solo/ad2htpb/aiops-monitoring?orgId=1&timezone=browser&theme=dark&panelId=panel-4&__feature.dashboardSceneSolo=true',
     icon: <Activity size={18} className="text-cyber-neon" />
   },
   {
     id: 'panel-3',
-    title: 'Resource Usage (Memory/CPU)',
+    title: 'Pod Status',
     // Panel 3 (Added theme=dark for consistency)
     src: 'https://stage-bass-stage-yours.trycloudflare.com/d-solo/ad2htpb/aiops-monitoring?orgId=1&timezone=browser&theme=dark&panelId=panel-3&__feature.dashboardSceneSolo=true',
     icon: <Cpu size={18} className="text-cyber-primary" />
   },
   {
     id: 'panel-2',
-    title: 'GPU Inference Metrics',
+    title: 'Total Memory Usage',
     // Panel 2 (Dark)
     src: 'https://stage-bass-stage-yours.trycloudflare.com/d-solo/ad2htpb/aiops-monitoring?orgId=1&timezone=browser&theme=dark&panelId=panel-2&__feature.dashboardSceneSolo=true',
     icon: <Server size={18} className="text-cyber-accent" />
   },
   {
     id: 'panel-1',
-    title: 'Network Tunnel Latency',
+    title: 'Cluster CPU Usage',
     // Panel 1 (Dark)
     src: 'https://stage-bass-stage-yours.trycloudflare.com/d-solo/ad2htpb/aiops-monitoring?orgId=1&timezone=browser&theme=dark&panelId=panel-1&__feature.dashboardSceneSolo=true',
     icon: <Wifi size={18} className="text-purple-400" />
