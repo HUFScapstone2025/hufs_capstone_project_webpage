@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloud Failure Response AIOps</title>
+    <!-- Tailwind CSS (프로덕션 배포 시에는 설치해서 쓰는 게 좋지만, 지금은 CDN 유지) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -14,10 +15,10 @@
                 black: '#020617',
                 dark: '#0f172a',
                 slate: '#1e293b',
-                primary: '#0ea5e9', // Sky blue
-                accent: '#10b981', // Emerald green
+                primary: '#0ea5e9',
+                accent: '#10b981',
                 danger: '#ef4444',
-                neon: '#22d3ee', // Cyan neon
+                neon: '#22d3ee',
               }
             },
             fontFamily: {
@@ -45,39 +46,21 @@
         background-color: #020617;
         color: #e2e8f0;
       }
-      /* Custom scrollbar for cyberpunk feel */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0f172a;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #334155;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #22d3ee;
-      }
-      .neon-text {
-        text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
-      }
-      .neon-border {
-        box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
-      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #0f172a; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #22d3ee; }
+      .neon-text { text-shadow: 0 0 10px rgba(34, 211, 238, 0.5); }
+      .neon-border { box-shadow: 0 0 15px rgba(34, 211, 238, 0.2); }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    
+    <!-- ▼▼▼ 이 부분이 핵심입니다! ▼▼▼ -->
+    <!-- Vite를 사용하는 경우, 진입점 파일을 모듈로 불러와야 합니다. -->
+    <!-- 파일명이 main.jsx 인지 index.jsx 인지 확인 후 src를 맞춰주세요 -->
+    <script type="module" src="index.tsx"></script> 
+    <!-- 만약 파일이 .tsx라면 src="/src/main.tsx" 로 변경하세요 -->
   </body>
 </html>
