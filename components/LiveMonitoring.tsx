@@ -57,7 +57,7 @@ const LiveMonitor: React.FC = () => {
           {panels.map((panel) => (
             <div 
               key={panel.id}
-              className="bg-cyber-slate/50 border border-slate-700 rounded-xl overflow-hidden shadow-lg hover:border-cyber-neon/50 transition-all duration-300 group"
+              className="bg-cyber-slate/50 border border-slate-700 rounded-xl overflow-auto shadow-lg hover:border-cyber-neon/50 transition-all duration-300 group"
             >
               {/* Panel Header */}
               <div className="px-4 py-3 border-b border-slate-700 bg-black/20 flex items-center justify-between">
@@ -79,7 +79,7 @@ const LiveMonitor: React.FC = () => {
                   height="100%"
                   frameBorder="0"
                   title={panel.title}
-                  className="pointer-events-none" // Optional: prevents scrolling inside the iframe if not needed
+                  className="" // Optional: prevents scrolling inside the iframe if not needed
                 ></iframe>
                 
                 {/* Overlay for "Offline" simulation if local IP isn't reachable (Optional visual flair) */}
